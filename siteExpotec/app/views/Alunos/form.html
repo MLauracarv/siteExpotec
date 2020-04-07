@@ -1,0 +1,20 @@
+#{extends 'main.html' /}
+#{set title:'Formulário' /}
+
+
+
+<form action="@{Alunos.salvar}">
+
+<input type="hidden" name="usu.id" value="${usu?.id}">
+
+Nome: <input type="text" name="usu.nome" value="${usu?.nome}"> <br/>
+
+E-mail: <input type="text" name="usu.email" value="${usu?.email}"> <br/>
+
+Senha: <input type="password" name="usu.senha"> <br/>
+
+Ano nascimento: <input type="text" name="usu.anoNascimento" value="${usu?.anoNascimento}"> <br/>
+
+<button type="subbmit">Enviar</button>
+
+</form>
